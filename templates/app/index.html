@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+        {% for foo in books %}
+            <tr>
+            <td>书的名字：{{ foo.title }}</td>
+            </tr>
+            <tr>
+            <td>作者的名字：
+                 {% for author in foo.authors.all %}
+                    {{ author.name }}
+                 {% endfor %}
+            </td>
+            </tr>
+
+        {% endfor %}
+</table>
+================================
+<table>
+    {% for author in authors %}
+        <tr>
+        <td>作者的名字：{{ author.name }}</td>
+        </tr>
+        <tr>
+        <td>
+            书的名字：
+            {% for book in author.bookinfo_set.all %}
+                {{ book.title }}
+            {% endfor %}
+
+        </td>
+        </tr>
+
+    {% endfor %}
+
+</table>
+</body>
+</html>

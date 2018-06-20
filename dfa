@@ -1,0 +1,32 @@
+commit ecba32a8a7cad13969d2437c88efd03e888c90b6
+Author: root <root@localhost.localdomain>
+Date:   Sun Jun 17 01:54:12 2018 -0400
+
+    617727
+
+ .gitignore         | 16 ++++++++++++++++
+ app/__init__.py    |  2 ++
+ app/urls.py        |  7 +++++++
+ app/views.py       |  5 ++++-
+ mysite/settings.py |  9 +++++++--
+ mysite/urls.py     |  1 +
+ 6 files changed, 37 insertions(+), 3 deletions(-)
+
+commit 8ada27ba5c80eff26eaa62da2c8d1797583c4985
+Author: root <root@localhost.localdomain>
+Date:   Sun Jun 17 00:18:59 2018 -0400
+
+    first commit
+
+ app/__init__.py            |   0
+ app/admin.py               |   3 ++
+ app/migrations/__init__.py |   0
+ app/models.py              |   3 ++
+ app/tests.py               |   3 ++
+ app/views.py               |   3 ++
+ manage.py                  |  10 +++++
+ mysite/__init__.py         |   0
+ mysite/settings.py         | 102 +++++++++++++++++++++++++++++++++++++++++++++
+ mysite/urls.py             |  10 +++++
+ mysite/wsgi.py             |  16 +++++++
+ 11 files changed, 150 insertions(+)
